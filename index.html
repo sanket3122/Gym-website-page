@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanket Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Itim&family=Open+Sans&family=Texturina:wght@200&display=swap"
+        rel="stylesheet">
+    <style>
+        /* CSS reset */
+        body {
+            /* font-family: 'Nunito', sans-serif; */
+            font-family: 'Architects Daughter', cursive;
+            font-family: 'Itim', cursive;
+            /* font-family: 'Open Sans', sans-serif; */
+            font-family: 'Texturina', serif;
+            margin: 0px;
+            padding: 0px;
+            background-color: azure;
+            background: url('img/gym_img2.jpg');
+            /* height: 4400px; */
+            /* width: 400px; */
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 25px;
+            top: 20px;
+        }
+
+        .right {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            right: 34px;
+        }
+
+        .mid {
+            /* this is three line puts data in the centre */
+            display: block;
+            width: 40%;
+            margin: 12px auto;
+            /* border: 2px solid red; */
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            color: aliceblue;
+            text-decoration: none;
+            padding: 34px 20px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: rgb(9, 175, 216);
+
+        }
+
+        .left img {
+            width: 100px;
+            /* filter:brightness(100%); */
+            filter: invert(100%);
+        }
+
+        .left div {
+            text-align: center;
+            color: white;
+        }
+
+        .btn {
+            margin: 0px 3px;
+            font-family: 'Texturina', serif;
+            padding: 4px 14px;
+            background-color: black;
+            color: white;
+            border: 2px solid grey;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: grey;
+        }
+
+        .container {
+            border: 2px solid white;
+            margin-top: 114px;
+            margin-left: 54px;
+            padding: 30px;
+            width: 50%;
+            border-radius: 30px;
+            height: 315px;
+            align-items: center;
+        }
+
+        .form {
+            color: red;
+        }
+
+        .form input {
+            background-color: rgb(226, 212, 190);
+            display: block;
+            padding: 5px;
+            width: 400px;
+            border: none;
+            text-align: center;
+            margin: 10px auto;
+            font-size: 15px;
+            border-radius: 9px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container button {
+            
+            display: block;
+            border-radius: 10px;
+            width: 61%;
+            margin: 19px auto;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- left -->
+            <img src="img/gym_logo.png" alt="">
+            <div style="line-height: 0px;">Sanket Fitness</div>
+        </div>
+
+        <div class="mid">
+            <!-- <p>mid</p> -->
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a> </li>
+                <li><a href="#">Daily Tips</a> </li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <!-- right -->
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <!-- i am a container. -->
+        <h1 style="color: white; ">Join The Best Gym of Pune Now</h1>
+        <form action="data.php">
+
+            <div class="form">
+                <input type="text" name="name" id="" placeholder="Name">
+            </div>
+
+            <div class="form">
+                <input type="text" name="address" id="" placeholder="Address">
+            </div>
+
+            <div class="form">
+                <input type="text" name="number" id="" placeholder="Contact Number">
+            </div>
+
+            <div class="form">
+                <input type="email" name="email" id="" placeholder="Email">
+            </div>
+
+            <div class="form">
+                <button class="btn">Submit</button>
+            </div>
+
+        </form>
+
+
+
+
+    </div>
+</body>
+
+</html>
